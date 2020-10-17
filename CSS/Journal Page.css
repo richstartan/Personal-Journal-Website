@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Samsung Sans Bold';
+  src: url('../Fonts/SamsungSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Samsung Sans Light';
+  src: url('../Fonts/SamsungSans-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Samsung Sans Medium';
+  src: url('../Fonts/SamsungSans-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Samsung Sans Regular';
+  src: url('../Fonts/SamsungSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Samsung Sans Thin';
+  src: url('../Fonts/SamsungSans-Thin.ttf');
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-image: url("../Images/bg.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	overflow-y: auto;
+}
+
+.welcome-title {
+	font-family: 'Samsung Sans Thin';
+	font-size: 25px;
+	color: white;
+}
+
+.entry-title {
+	font-family: 'Samsung Sans Bold';
+	font-size: 50px;
+	color: white;
+	border-style: ridge;
+	border-radius: 5px;
+	border-width: 10px;
+	border-color: #2e86de;
+	width: 50%;
+	background-color: #5f27cd;
+	transition: transform .2s; /* Animation */
+}
+
+.entry-title:hover {
+	transform: scale(1.1); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.btn {
+	font-family: 'Samsung Sans Regular';
+	margin-right: 10px;
+}
+
+#logo {
+	margin-right: 5px;
+	width: 150px;
+	height: 100px;
+	transition: transform .2s; /* Animation */
+}
+
+#logo:hover {
+	 transform: scale(1.2); /* (120% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.navbar {
+	font-family: 'Samsung Sans Regular';
+	font-size: 30px;
+}
+
+
+.breadcrumb-item
+{
+	font-family: 'Samsung Sans Medium';
+	font-size: 20px;
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+.journal-entry {
+    margin-top: 5rem;
+    margin-top: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: #321350;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.now {
+	font-family: 'Samsung Sans Light';
+    max-width: 10%;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 10px;
+    border-style: dotted;
+    background: #321350;
+    margin-top: 10px;
+    margin-left: 3rem;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s; /* Animation */
+}
+
+.now p {
+    margin-left: 2.3rem;
+}
+
+.now p:hover {
+    font-size: larger;
+    transform: scale(1.2); /* (120% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
